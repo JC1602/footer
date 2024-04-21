@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex; /*para hacerla flecible*/
+  justify-content: center; /*centras horizontalmente*/
+  align-items: center; /*centrar verticalmente*/
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+  mix-blend-mode: multiply;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px; /*ancho*/
+  height: 45px; /*alto*/
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center; /*centrar el icono*/
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: green;
+  text-decoration: none;
+  width: 45px;
+}
+
+.pie-pagina .grupo-1 .red-social b {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social b:hover {
+  color: red;
+  text-decoration: none;
+  width: 45px;
+}
+
+.pie-pagina .grupo-1 .red-social c {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social c:hover {
+  color: purple;
+  text-decoration: none;
+  width: 45px;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+.pie-pagina .grupo-3 {
+  width: 100%;
+  max-width: 3000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 200px; /*separacion entre columnas*/
+  padding: 15px 30px; /*1:para alto y baj 2:para el ancho*/
+  background-color: #0a141d;
+}
+
+.pie-pagina .grupo-3 .box h2 {
+  color: #fff;
+  margin-bottom: 15px; /*separar la parte inferior*/
+  font-size: 20px; /*tamaño de la letra*/
+}
+
+.pie-pagina .grupo-3 .box p {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+body {
+  position: relative; /*despalaza el elemento 
+desde su posicion inicial pero simpre se guarda su pocision*/
+  min-height: 100vh; /*para posicionarlo hasta donde se acaba la pagina*/
+  padding-bottom: 3em; /* para separar el foorter del restor de la pagina*/
+}
+
+footer {
+  position: absolute; /*para poder posicionarlo por encima de todo
+y se salte el flujo de los otros componetes   */
+  bottom: 0; /*para colocar el footer hasta abajo*/
+  border: 10px solid rebeccapurple;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .pie-pagina .grupo-3 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
